@@ -34,7 +34,7 @@ export default function AddCustomer({ closeAddCustomer, onCustomerAdded }) {
 
   try {
     const res = await api.post(
-      "crm/customerss/",  
+      "crm/customers/",  
       data,
       { headers: { "Content-Type": "multipart/form-data" } }
     );

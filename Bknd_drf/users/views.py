@@ -9,6 +9,8 @@ from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.exceptions import InvalidToken, TokenError
+from rest_framework.permissions import AllowAny
+
 User = get_user_model()
 
 
@@ -16,9 +18,9 @@ User = get_user_model()
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
+    permission_classes = [AllowAny]
 
-
-
+@csrf_exempt
 def login_view(request):
     if request.method == "POST":
         try:

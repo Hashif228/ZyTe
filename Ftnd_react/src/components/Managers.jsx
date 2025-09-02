@@ -6,6 +6,16 @@ import { X } from "lucide-react";
 import api from "./api"; 
 
 export default function Managers() {
+    const toggleStatus = async (id, newStatus) => {
+  try {
+    await api.patch(`crm/managers/${id}/`, { is_active: newStatus });
+    setManagers(managers.map(m => m.id === id ? { ...m, is_active: newStatus } : m));
+    setFilteredManagers(filteredManagers.map(m => m.id === id ? { ...m, is_active: newStatus } : m));
+  } catch (err) {
+    console.error("Error updating manager status:", err);
+  }
+};
+
   const [showAddManager, setShowAddManager] = useState(false);
   const [managers, setManagers] = useState([]);
 
@@ -138,11 +148,17 @@ export default function Managers() {
                                                 </div>
                                             )}
                                             {col === "Mail" && <div className={styles.support}>{manager.email}</div>}
-                                            {col === "Status" && (
-                                                <div className={styles.switchButton}>
-                                                    <div className={styles.switchButtonChild} />
-                                                </div>
-                                            )}
+                                                                                            {col === "Status" && (
+                                                <label className={styles.switch}>
+                                                    <input
+                                                    type="checkbox"
+                                                    checked={manager.is_active}
+                                                    onChange={() => toggleStatus(manager.id, !manager.is_active)}
+                                                    />
+                                                    <span className={styles.slider}></span>
+                                                </label>
+                                                )}
+
                                         </div>
                                     ))}
                                 </div>

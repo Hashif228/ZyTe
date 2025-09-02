@@ -6,6 +6,15 @@ import { X } from "lucide-react";
 import api from "./api";
 
 export default function StaffManagement() {
+  const toggleStatus = async (id, newStatus) => {
+  try {
+    await api.patch(`crm/staffs/${id}/`, { is_active: newStatus });
+    setStaffs(staffs.map(s => s.id === id ? { ...s, is_active: newStatus } : s));
+  } catch (err) {
+    console.error("Error updating status:", err);
+  }
+};
+
   const [showAddStaff, setShowAddStaff] = useState(false);
   const [staffs, setStaffs] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -42,7 +51,16 @@ export default function StaffManagement() {
     { key: "phone", label: "Phone" },
     { key: "created_at", label: "Joined On", render: s => s.created_at.split("T")[0] },
     { key: "email", label: "Mail" },
-    { key: "status", label: "Status", render: s => s.is_active ? "Active" : "Inactive" },
+{ key: "status", label: "Status", render: (s, toggleStatus) => (
+  <label className={styles.switch}>
+    <input
+      type="checkbox"
+      checked={s.is_active}
+      onChange={() => toggleStatus(s.id, !s.is_active)}
+    />
+    <span className={styles.slider}></span>
+  </label>
+)},
   ];
 
   return (
@@ -119,7 +137,7 @@ export default function StaffManagement() {
                       className={rowIndex % 2 === 0 ? styles.receptionistTableContent : styles.content}
                     >
                       <div className={styles.nataliCraig}>
-                        {col.render ? col.render(staff) : staff[col.key]}
+                        {col.render ? col.render(staff,toggleStatus) : staff[col.key]}
                       </div>
                     </div>
                   ))}
