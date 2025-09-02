@@ -1,0 +1,108 @@
+.active {
+  background-color: #ffffff; 
+  color: #0a165c;              
+  border-radius: 6px;         
+}
+
+.active .menuIcon {
+  color: #0a165c; 
+}
+
+.active .labelDemo {
+  color: #0a165c; 
+}
+
+.dashboardScreen1_menu {
+  align-self: stretch;
+  background-color: #0a165c;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 0px 0px;
+  gap: 8px;
+}
+
+.logo {
+  align-self: stretch;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 28px 20px;
+  box-sizing: border-box;
+}
+
+.logoIcon {
+  width: 112.5px;
+  position: relative;
+  height: auto;
+}
+
+.menuItems {
+  width: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuOptions {
+  width: 212px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuOptionsInner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.menuIconParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 20px;
+  position: relative;
+  gap: 12px;
+}
+
+.menuIcon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.labelDemo {
+  position: relative;
+  letter-spacing: -0.04em;
+  line-height: 20px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.frameChild {
+  width: 4px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 16px);
+  right: 0px;
+  background-color: #0a165c;
+  height: 33px;
+  z-index: 2;
+}

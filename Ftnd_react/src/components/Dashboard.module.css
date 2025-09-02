@@ -1,0 +1,746 @@
+.managers_icon{
+	color: #00BE3F;
+}
+.staff_icon{
+	color: #BE2000;
+}
+
+.customers_icon{
+	color: #006FBE;
+}
+
+.department_icon{
+	color: rgb(251, 140, 80);
+}
+
+.welcomeBar {
+  	align-self: stretch;
+  	height: 68px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  	gap: 0px;
+	font-weight: 700;
+}
+.userInfo {
+  	width: 365px;
+  	height: 68px;
+}
+.contentArea {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+  	font-size: 14px;
+  	color: #1c1c1c;
+}
+.summaryCards {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+}
+.summaryCardRow {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	height: 68px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.summaryCard {
+  	align-self: stretch;
+  	flex: 1;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 12px;
+  	background-color: #fff;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 12px;
+}
+.dashboardCountersParent {
+  	flex: 1;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 8px;
+}
+.dashboardCounters {
+  	width: 32px;
+  	border-radius: 5px;
+  	background-color: rgba(0, 190, 63, 0.05);
+  	height: 32px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 5px 6px;
+  	box-sizing: border-box;
+}
+.userIcon {
+  	width: 20px;
+  	position: relative;
+  	max-height: 100%;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 6px;
+}
+.totalPatientsWrapper {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.totalPatients {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.wrapper {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: center;
+  	font-size: 20px;
+  	color: #000;
+}
+.div {
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 20px;
+  	font-weight: 500;
+}
+.dashboardScreen1_dashboardCounters {
+  	width: 32px;
+  	border-radius: 5px;
+  	background-color: rgba(190, 32, 0, 0.05);
+  	height: 32px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 5px 6px;
+  	box-sizing: border-box;
+}
+.dashboardCounters1 {
+  	width: 32px;
+  	border-radius: 5px;
+  	background-color: rgba(0, 111, 190, 0.05);
+  	height: 32px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 5px 6px;
+  	box-sizing: border-box;
+}
+.customerSection {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.menu{
+	width: 100%;
+}
+
+.block {
+  	flex: 1;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 12px;
+  	background-color: #fdfdfd;
+  	height: 320px;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 16px;
+}
+.text {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+.sectionTitle {
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+  	font-weight: 600;
+}
+.component130Parent {
+  	display: none;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 10px;
+  	font-size: 12px;
+  	color: #000;
+}
+.component130 {
+  	border-radius: 5px;
+  	background-color: #fff;
+  	border: 1px solid #e7e7e7;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 9px 16px;
+  	gap: 8px;
+}
+.customerInfo {
+  	align-self: stretch;
+  	flex: 1;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 0px 0px;
+  	font-size: 12px;
+}
+.dashboardScreen1_text {
+  	width: 100%;
+  	height: 40px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-width: 80px;
+  	max-width: 220px;
+  	min-height: 40px;
+  	font-size: 14px;
+  	color: #000;
+}
+.customerId {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+  	font-weight: 600;
+}
+.content {
+  	align-self: stretch;
+  	background-color: #f6f6f6;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.dashboardScreen1_customerId {
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.dashboardScreen1_content {
+  	align-self: stretch;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.frame1 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.text1 {
+  	align-self: stretch;
+  	height: 40px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+  	font-size: 14px;
+  	color: #000;
+}
+.icontext {
+  	flex: 1;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+}
+.text2 {
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+}
+.text3 {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.frame2 {
+  	align-self: stretch;
+  	width: 220px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.frame4 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #be0000;
+}
+.customerStatus {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+  	font-weight: 600;
+}
+.content15 {
+  	align-self: stretch;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+  	color: #4cbe00;
+}
+.statusbadge {
+  	border-radius: 80px;
+  	background-color: rgba(76, 190, 0, 0.12);
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 6px 8px;
+}
+.dashboardScreen1_statusbadge {
+  	border-radius: 80px;
+  	background-color: rgba(190, 0, 0, 0.12);
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 8px;
+}
+.content17 {
+  	align-self: stretch;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+  	color: #be9100;
+}
+.statusbadge1 {
+  	border-radius: 80px;
+  	background-color: rgba(186, 190, 0, 0.12);
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 6px 8px;
+}
+.footer {
+  	align-self: stretch;
+  	height: 336px;
+}
+.contentAreaInner {
+  	width: 1294px;
+  	display: none;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.blockParent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 20px;
+}
+.dashboardScreen1_block {
+  	flex: 1;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 12px;
+  	background-color: #fdfdfd;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	position: relative;
+  	gap: 16px;
+  	min-width: 200px;
+}
+.totalSalesParent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 16px;
+  	z-index: 0;
+}
+.icon {
+  	width: 120px;
+  	position: relative;
+  	height: 120px;
+}
+.card {
+  	align-self: stretch;
+  	border-radius: 16px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 12px;
+  	font-size: 12px;
+}
+.content19 {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	gap: 48px;
+}
+.tag {
+  	flex: 1;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 2px 8px 2px 4px;
+}
+.dot {
+  	width: 16px;
+  	position: relative;
+  	height: 16px;
+}
+.vectorIcon3 {
+  	position: absolute;
+  	height: 37.5%;
+  	width: 37.5%;
+  	top: 31.25%;
+  	right: 31.25%;
+  	bottom: 31.25%;
+  	left: 31.25%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.text21 {
+  	width: 50px;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+}
+.tooltip {
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 122px;
+  	left: 65px;
+  	backdrop-filter: blur(40px);
+  	border-radius: 8px;
+  	background-color: rgba(28, 28, 28, 0.8);
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 4px 8px;
+  	z-index: 1;
+  	font-size: 12px;
+  	color: #fff;
+}
+.block1 {
+  	align-self: stretch;
+  	width: 925px;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 16px;
+  	background-color: #fdfdfd;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 16px;
+  	min-width: 400px;
+}
+.text31 {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+}
+.chart {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 16px;
+  	text-align: right;
+  	font-size: 12px;
+  	color: #525256;
+}
+.leftText {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: space-between;
+  	gap: 0px;
+}
+.div4 {
+  	align-self: stretch;
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.frame5 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	position: relative;
+  	text-align: center;
+}
+.line {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: space-between;
+  	padding: 16px 0px 28px;
+  	gap: 0px;
+  	z-index: 0;
+}
+.div8 {
+  	align-self: stretch;
+  	position: relative;
+  	border-top: 1px solid rgba(28, 28, 28, 0.05);
+  	box-sizing: border-box;
+  	height: 1px;
+}
+.div11 {
+  	align-self: stretch;
+  	position: relative;
+  	border-top: 1px solid rgba(28, 28, 28, 0.2);
+  	box-sizing: border-box;
+  	height: 1px;
+}
+.bottomText {
+  	width: 100%;
+  	margin: 0 !important;
+  	position: absolute;
+  	right: 0%;
+  	bottom: 0px;
+  	left: 0%;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	z-index: 1;
+}
+.verticalBar {
+  	width: 100%;
+  	margin: 0 !important;
+  	position: absolute;
+  	height: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: space-between;
+  	padding: 0px 0px 28px;
+  	box-sizing: border-box;
+  	gap: 0px;
+  	z-index: 2;
+}
+.div18 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-end;
+  	padding: 50px 16px 0px;
+}
+.frame6 {
+  	align-self: stretch;
+  	flex: 1;
+  	position: relative;
+}
+.rectangle {
+  	position: absolute;
+  	height: 100%;
+  	top: 0%;
+  	bottom: 0%;
+  	left: calc(50% - 9.65px);
+  	border-radius: 4px 4px 0px 0px;
+  	background-color: #3a3565;
+  	width: 20px;
+  	opacity: 0.15;
+}
+.dashboardScreen1_rectangle {
+  	position: absolute;
+  	top: 20%;
+  	bottom: 0%;
+  	left: calc(50% - 9.65px);
+  	background-color: #3a3565;
+  	width: 20px;
+}
+.div19 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-end;
+  	padding: 30px 16px 0px;
+}
+.div20 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-end;
+  	padding: 45px 16px 0px;
+}
+.div21 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-end;
+  	padding: 20px 16px 0px;
+}
+.div22 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-end;
+  	padding: 60px 16px 0px;
+}
+
+/* Dashboard.module.css */
+
+.statusInProgress {
+  background-color: rgba(186, 190, 0, 0.12);
+  color: #be9100;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.statusConverted {
+  background-color: rgba(190, 0, 0, 0.12);
+  color: #be0000;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.statusNew {
+  background-color: rgba(76, 190, 0, 0.12);
+  color: #4cbe00;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+
+.title{
+	text-transform: capitalize;
+}

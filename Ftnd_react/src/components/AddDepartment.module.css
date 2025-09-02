@@ -1,0 +1,172 @@
+.dashboardScreen05 {
+  		width: 45%;
+  	position: absolute;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 12px;
+  	background-color: #fdfdfd;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	gap: 24px;
+  	text-align: left;
+  	font-size: 20px;
+  	color: #262626;
+  	font-family: Inter;
+    top: 35%;
+    left: 25%;
+    z-index: 2;
+    border: 1px solid rgb(227, 227, 227);    
+}
+.text {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+}
+.title {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 20px;
+  	font-weight: 600;
+}
+.formContainer {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: flex-end;
+  	gap: 24px;
+  	font-size: 13px;
+  	color: #121212;
+}
+.formRow {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.inputField {
+  	flex: 1;
+  	height: 76px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 8px;
+	
+}
+.inputLabel {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.dashboardScreen05InputField {
+  	align-self: stretch;
+  	border-radius: 10px;
+  	background-color: #f7f7f7;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 16px 12px;
+  	box-sizing: border-box;
+  	color: #111111;
+	border: 1px solid #bebcbc;
+}
+.enterTitle {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.buttonContainer {
+  	width: 354px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 8px;
+  	font-size: 14px;
+  	color: #0a165c;
+}
+.buttonTextWrapper {
+  	flex: 1;
+  	border-radius: 8px;
+  	background-color: #ebebf0;
+  	height: 40px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 10px 16px;
+  	box-sizing: border-box;
+}
+.buttonText {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+  	font-weight: 600;
+}
+.buttonTextContainer {
+  	flex: 1;
+  	border-radius: 8px;
+  	background-color: #0a165c;
+  	height: 40px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 10px 16px;
+  	box-sizing: border-box;
+  	color: #c6c1c1;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cancelButton {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: #f2f2f2ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+}
+
+.submitButton {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: #0a165c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.submitButton.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.submitButton:hover:not(.disabled) {
+  background-color: #111d8c;
+}

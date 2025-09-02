@@ -1,0 +1,10 @@
+a{
+  text-decoration: none; 
+  cursor: pointer;   
+  color: white;   
+
+}
+a:active {
+  color: rgb(1, 63, 1);  
+          
+}

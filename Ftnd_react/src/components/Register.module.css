@@ -1,0 +1,113 @@
+.registerContainer {
+ 
+  position: relative;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  /* padding-top: 150px; */
+}
+
+.registerBox {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  margin:auto 0;
+}
+
+.registerHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerTitle {
+  color: black;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.registerSubtitle {
+  color: #656565;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  color: #121212;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.inputWrapper {
+  height: 50px;
+  padding: 0 12px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.formInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  color: #121212;
+  background-color: #f7f7f7;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btnRegister {
+  height: 50px;
+  background: #0a165c;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btnRegister:hover {
+  background: #08124a;
+}
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}

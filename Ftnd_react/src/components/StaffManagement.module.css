@@ -1,0 +1,538 @@
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and input */
+  padding: 6px 12px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  width: 200px;
+  height: 30px;
+}
+
+
+.magnifyingglassIcon {
+  width: 18px;
+  opacity: 0.5;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+
+.filterContainer {
+  	width: 100%;
+  	position: relative;
+  	height: 68px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: flex-end;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #fff;
+  	font-family: Inter;
+}
+.buttonTextParent {
+  	border-radius: 8px;
+  	background-color: #0a165c;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 10px 16px;
+  	box-sizing: border-box;
+  	gap: 8px;
+  	cursor: pointer;
+}
+.buttonText {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 24px;
+  	font-weight: 600;
+}
+.cloudarrowdown {
+  	width: 20px;
+  	position: relative;
+  	height: 20px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.cloudarrowdownChild {
+  	position: absolute;
+  	top: calc(50% - 10px);
+  	left: calc(50% - 10px);
+  	width: 20px;
+  	height: 20px;
+}
+
+.receptionistTable {
+  	width: 100%;
+  	position: relative;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 12px;
+  	background-color: #fdfdfd;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 24px;
+  	box-sizing: border-box;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #a3a3a3;
+  	font-family: Inter;
+}
+.tableContainer {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 4px;
+}
+.tableHeader {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-end;
+}
+.tableFilters {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.inputField {
+  	width: 234px;
+  	border-radius: 10px;
+  	background-color: #f7f7f7;
+  	height: 42px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 16px 12px;
+  	box-sizing: border-box;
+  	gap: 10px;
+}
+.magnifyingglassIcon {
+  	width: 24px;
+  	position: relative;
+  	max-height: 100%;
+}
+.enterTitle {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.dateFilters {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: flex-start;
+  	gap: 12px;
+  	font-size: 15px;
+  	color: #333;
+}
+.dateRange {
+  	width: 365px;
+  	position: relative;
+  	height: 68px;
+}
+.dateRangeInputs {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 365px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 12px;
+}
+.startDate {
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 8px;
+}
+.label {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.receptionistTableLabel {
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	font-weight: 600;
+}
+.fieldContent {
+  	align-self: stretch;
+  	box-shadow: 0px 0px 18.3px rgba(116, 116, 116, 0.06);
+  	border-radius: 8px;
+  	background-color: #fff;
+  	height: 42px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 8px 15px;
+  	box-sizing: border-box;
+  	gap: 8px;
+  	font-size: 14px;
+}
+.iconFieldCalendar {
+  	width: 13px;
+  	position: relative;
+  	height: 13px;
+	background-color: #ababab;
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+}
+.chooseDate {
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+	border: none;
+	width: 100px;
+	height: 40px;
+	outline: none;
+	color: #414141;
+}
+.applyButtonContainer {
+  	width: 83px;
+  	border-radius: 8px;
+  	background-color: #0a165c;
+  	height: 42px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 8px 16px;
+  	box-sizing: border-box;
+  	font-size: 13px;
+  	color: #fff;
+	cursor: pointer;
+}
+
+.applyButton {
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+  	font-weight: 500;
+}
+.tableBody {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 0px 0px;
+  	font-size: 12px;
+  	color: #000;
+}
+.frame {
+  	align-self: stretch;
+  	width: 96px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #1c1c1c;
+}
+.text {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+  	font-size: 14px;
+  	color: #000;
+}
+.username {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+  	font-weight: 600;
+}
+.receptionistTableText {
+  	align-self: stretch;
+  	background-color: #f6f6f6;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.idRow1 {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.text2 {
+  	align-self: stretch;
+  	border-radius: 8px;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.text4 {
+  	align-self: stretch;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.receptionistTableFrame {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 14px;
+}
+.text14 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.nameColumn {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 12px;
+  	color: #1c1c1c;
+}
+.content {
+  	align-self: stretch;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.nataliCraig {
+  	flex: 1;
+  	position: relative;
+  	letter-spacing: -0.04em;
+  	line-height: 18px;
+}
+.receptionistTableContent {
+  	align-self: stretch;
+  	background-color: #f6f6f6;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+}
+.frame4 {
+  	align-self: stretch;
+  	width: 156px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #3a3565;
+}
+.frame5 {
+  	align-self: stretch;
+  	width: 154px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #1c1c1c;
+}
+.text31 {
+  	align-self: stretch;
+  	height: 40px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-height: 40px;
+  	font-size: 14px;
+  	color: #000;
+}
+.calendarblankParent {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 8px;
+}
+.calendarblankIcon {
+  	width: 20px;
+  	position: relative;
+  	max-height: 100%;
+}
+.text33 {
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+}
+.frame6 {
+  	align-self: stretch;
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	color: #1c1c1c;
+}
+.text72 {
+  	flex: 1;
+  	border-radius: 8px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+}
+.frame7 {
+  	align-self: stretch;
+  	width: 102px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 14px;
+}
+.text98 {
+  	width: 100%;
+  	height: 40px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-width: 80px;
+  	max-width: 220px;
+  	min-height: 40px;
+}
+.content52 {
+  	width: 100%;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-width: 80px;
+  	max-width: 220px;
+  	min-height: 40px;
+}
+.switchButton {
+  	width: 40px;
+  	border-radius: 24px;
+  	background-color: #e4e5f5;
+  	height: 20px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-end;
+  	padding: 1px;
+  	box-sizing: border-box;
+}
+.switchButtonChild {
+  	align-self: stretch;
+  	width: 18px;
+  	position: relative;
+  	border-radius: 50%;
+  	background-color: #3a3565;
+}
+.content53 {
+  	width: 100%;
+  	background-color: #f6f6f6;
+  	height: 56px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	padding: 8px 12px;
+  	box-sizing: border-box;
+  	min-width: 80px;
+  	max-width: 220px;
+  	min-height: 40px;
+}
+.receptionistTableSwitchButton {
+  	width: 40px;
+  	border-radius: 24px;
+  	background-color: #d1d1d1;
+  	height: 20px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 1px;
+  	box-sizing: border-box;
+}
+.switchButtonItem {
+  	align-self: stretch;
+  	width: 18px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(116, 116, 116, 0.15);
+  	border-radius: 50%;
+  	background-color: #f6f6f6;
+}
+
