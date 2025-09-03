@@ -1,6 +1,6 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import CustomerSerializer, ManagerSerializer, StaffSerializer, DepartmentSerializer
+from .serializers import CustomerSerializer, ManagerSerializer, StaffSerializer, DepartmentSerializer,StaffStatusSerializer
 from rest_framework import generics, status
 from rest_framework.generics import ListCreateAPIView
 from rest_framework.parsers import MultiPartParser, FormParser
@@ -123,5 +123,5 @@ class ManagerListCreateAPIView(generics.ListCreateAPIView):
 
 class StaffUpdateAPIView(generics.UpdateAPIView):
     queryset = Staff.objects.all()
-    serializer_class = StaffSerializer
-    http_method_names = ['patch', 'put'] 
+    serializer_class = StaffStatusSerializer
+    http_method_names = ['patch']
