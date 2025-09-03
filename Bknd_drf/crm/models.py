@@ -39,7 +39,7 @@ class Staff(models.Model):
         blank=False,
         related_name='staff_members'
     )
-
+    status = models.BooleanField(default=False)  
     def __str__(self):
         return self.name
 
