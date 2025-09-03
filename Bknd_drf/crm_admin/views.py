@@ -13,6 +13,7 @@ def main(request):
     urls = [
         "api/users/register",
         "api/users/login",
+        "api/users/verify-token/"
         "api/crm/totals",
         "api/crm/dashboard",
         "api/crm/managers",
