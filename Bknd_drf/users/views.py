@@ -2,15 +2,15 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from django.utils.decorators import method_decorator
 from django.contrib.auth import authenticate
-import json
 from rest_framework import generics
-from .serializers import RegisterSerializer
+from .serializers import RegisterSerializer,LoginSerializer
+from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.exceptions import InvalidToken, TokenError
 from rest_framework.permissions import AllowAny
-
+from rest_framework.response import Response
 User = get_user_model()
 
 
@@ -21,28 +21,26 @@ class RegisterView(generics.CreateAPIView):
     permission_classes = [AllowAny]
 
 @csrf_exempt
-def login_view(request):
-    if request.method == "POST":
-        try:
-            data = json.loads(request.body)
-            username = data.get("username")
-            password = data.get("password")
-            user = authenticate(request, username=username, password=password)
-            if user is not None:
-                refresh = RefreshToken.for_user(user)
-                return JsonResponse({
-                    "message": "Login successful",
-                    "username": user.username,
-                    "access": str(refresh.access_token), 
-                    "refresh": str(refresh),            
-                })
-            else:
-                return JsonResponse({"error": "Invalid credentials"}, status=400)
-        except Exception as e:
-            return JsonResponse({"error": str(e)}, status=500)
-    return JsonResponse({"error": "Only POST allowed"}, status=405)
+class LoginView(APIView):
+    permission_classes = [AllowAny]  # public access
 
+    def post(self, request):
+        serializer = LoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
 
+        username = serializer.validated_data['username']
+        password = serializer.validated_data['password']
+
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            refresh = RefreshToken.for_user(user)
+            return Response({
+                "message": "Login successful",
+                "username": user.username,
+                "access": str(refresh.access_token),
+                "refresh": str(refresh),
+            })
+        return Response({"error": "Invalid credentials"}, status=status.HTTP_400_BAD_REQUEST)
 
 @csrf_exempt
 def verify_token(request):
