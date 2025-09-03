@@ -8,10 +8,6 @@ api.interceptors.request.use((config) => {
   const token = localStorage.getItem("access_token");
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
-  } else {
-    // If no token, redirect immediately
-    window.location.href = "https://crmadmin-blush.vercel.app/";
-    return Promise.reject("No access token, redirecting...");
   }
   return config;
 });
@@ -34,9 +30,11 @@ api.interceptors.response.use(
 
         return api(originalRequest);
       } catch (err) {
-        console.log("Refresh failed:", err);
+        console.log(err);
+    
         localStorage.clear();
         window.location.href = "https://crmadmin-blush.vercel.app/";
+
       }
     }
     return Promise.reject(error);
