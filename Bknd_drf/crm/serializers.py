@@ -15,7 +15,7 @@ class ManagerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Manager
-        fields = ['id', 'name', 'phone', 'email', 'team', 'created_at', 'department', 'department_name']
+        fields = "__all__"
 
 class ManagerStatusSerializer(serializers.ModelSerializer):
     class Meta:
