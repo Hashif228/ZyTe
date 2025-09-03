@@ -8,7 +8,7 @@ import api from "./api";
 export default function Managers() {
     const toggleStatus = async (id, newStatus) => {
   try {
-    await api.patch(`crm/managers/${id}/status/`, { status: newStatus });
+    await api.patch(`crm/managers/${id}/`, { status: newStatus });
     setManagers(managers.map(m => m.id === id ? { ...m, status: newStatus } : m));
     setFilteredManagers(filteredManagers.map(m => m.id === id ? { ...m, status: newStatus } : m));
   } catch (err) {
