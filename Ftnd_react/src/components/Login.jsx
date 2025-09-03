@@ -98,7 +98,7 @@ export default function Login() {
         </form>
 
         <div className="register">
-          <div className="neww">New user?</div>
+          <div className="neww">New?</div>
           <Link to="/register" className="reg">
             Register Here
           </Link>
