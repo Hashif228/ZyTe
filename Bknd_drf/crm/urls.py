@@ -10,7 +10,8 @@ urlpatterns = [
     path("managers/", views.ManagerListCreateAPIView.as_view(), name="managers"),
     path("staffs/", views.StaffListCreateAPIView.as_view(), name="staffs"),
     path("customers/", views.CustomerListCreateAPIView.as_view(), name="customers"),
-    path('departments/', DepartmentListCreateView.as_view(), name='departments')
+    path('departments/', DepartmentListCreateView.as_view(), name='departments'),
+    path("crm/staffs/<int:pk>/", StaffUpdateAPIView.as_view(), name="staff-update"),
 
 ]
 

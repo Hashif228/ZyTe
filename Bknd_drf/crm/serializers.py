@@ -26,6 +26,10 @@ class StaffSerializer(serializers.ModelSerializer):
         model = Staff
         fields = "__all__"
 
+class StaffStatusSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Staff
+        fields = ["is_active"]
 
 
 class DepartmentSerializer(serializers.ModelSerializer):

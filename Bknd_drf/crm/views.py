@@ -121,3 +121,7 @@ class ManagerListCreateAPIView(generics.ListCreateAPIView):
 
 
 
+class StaffUpdateAPIView(generics.UpdateAPIView):
+    queryset = Staff.objects.all()
+    serializer_class = StaffSerializer
+    http_method_names = ['patch', 'put'] 
