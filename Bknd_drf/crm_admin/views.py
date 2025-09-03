@@ -11,6 +11,7 @@ from rest_framework.response import Response
 def main(request):
 
     urls = [
+        "admin"
         "api/users/register",
         "api/users/login",
         "api/users/verify-token/"
