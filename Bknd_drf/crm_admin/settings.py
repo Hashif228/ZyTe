@@ -148,8 +148,8 @@ AUTH_USER_MODEL = "users.AdminUser"
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(days=1),  # or a few hours/days
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=0), # disable refresh
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=7), 
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=0), 
 }
 
 MEDIA_URL = '/media/'
