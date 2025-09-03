@@ -120,7 +120,7 @@ class ManagerListCreateAPIView(generics.ListCreateAPIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ManagerStatusUpdateAPIView(generics.UpdateAPIView):
-    queryset = Staff.objects.all()
+    queryset = Manager.objects.all()
     serializer_class = ManagerStatusSerializer
     http_method_names = ['patch']
 
