@@ -134,8 +134,8 @@ function Customers() {
                       <div className={styles.iconset}>
                         <img
                           className={styles.female15Icon}
-                          alt=""
-                          src={customer.picture || "/images/Logo.png"}
+                          alt="Pic"
+                          src={customer.picture || "/images/Customers.png"}
                         />
                       </div>
                       <div className={styles.text9}>
