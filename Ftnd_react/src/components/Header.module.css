@@ -51,11 +51,12 @@
 }
 .logout{
 	color: brown !important;
-	font-weight: 300 !important;
+	font-weight: 400 !important;
 	cursor: pointer !important;
+	font-size: large;
 }
 .logout:hover{
-	font-weight: 800 !important;
+	font-weight: 600 !important;
 }
 .searchInput {
   	display: flex;
