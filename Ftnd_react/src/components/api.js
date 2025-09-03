@@ -33,7 +33,7 @@ api.interceptors.response.use(
         console.log(err);
     
         localStorage.clear();
-        window.location.href = "/"; 
+        window.location.href = "https://crmadmin-blush.vercel.app"; 
       }
     }
     return Promise.reject(error);
