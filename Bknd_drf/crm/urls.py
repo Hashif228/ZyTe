@@ -7,10 +7,10 @@ from .views import *
 
 urlpatterns = [
     path('totals/', views.dashboard_counters, name='dashboard-counters'),
-    path("managers/", views.ManagerListCreateAPIView.as_view(), name="user-list"),
-    path("staffs/", views.StaffListCreateAPIView.as_view(), name="user-list"),
-    path("customers/", views.CustomerListCreateAPIView.as_view(), name="user-list"),
-    path('departments/', DepartmentListCreateView.as_view(), name='department-list')
+    path("managers/", views.ManagerListCreateAPIView.as_view(), name="managers"),
+    path("staffs/", views.StaffListCreateAPIView.as_view(), name="staffs"),
+    path("customers/", views.CustomerListCreateAPIView.as_view(), name="customers"),
+    path('departments/', DepartmentListCreateView.as_view(), name='departments')
 
 ]
 
