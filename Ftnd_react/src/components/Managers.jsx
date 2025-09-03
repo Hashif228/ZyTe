@@ -8,9 +8,9 @@ import api from "./api";
 export default function Managers() {
     const toggleStatus = async (id, newStatus) => {
   try {
-    await api.patch(`crm/managers/${id}/`, { is_active: newStatus });
-    setManagers(managers.map(m => m.id === id ? { ...m, is_active: newStatus } : m));
-    setFilteredManagers(filteredManagers.map(m => m.id === id ? { ...m, is_active: newStatus } : m));
+    await api.patch(`crm/managers/${id}/status/`, { status: newStatus });
+    setManagers(managers.map(m => m.id === id ? { ...m, status: newStatus } : m));
+    setFilteredManagers(filteredManagers.map(m => m.id === id ? { ...m, status: newStatus } : m));
   } catch (err) {
     console.error("Error updating manager status:", err);
   }
@@ -150,11 +150,12 @@ export default function Managers() {
                                             {col === "Mail" && <div className={styles.support}>{manager.email}</div>}
                                                                                             {col === "Status" && (
                                                 <label className={styles.switch}>
-                                                    <input
-                                                    type="checkbox"
-                                                    checked={manager.is_active}
-                                                    onChange={() => toggleStatus(manager.id, !manager.is_active)}
-                                                    />
+                                                            <input
+                                                            type="checkbox"
+                                                            checked={manager.status}
+                                                            onChange={() => toggleStatus(manager.id, !manager.status)}
+                                                            />
+
                                                     <span className={styles.slider}></span>
                                                 </label>
                                                 )}
