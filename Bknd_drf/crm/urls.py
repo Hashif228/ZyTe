@@ -1,7 +1,5 @@
 from django.urls import path
 from . import views
-from django.conf import settings
-from django.conf.urls.static import static
 from .views import *
 
 
@@ -11,7 +9,6 @@ urlpatterns = [
     path("staffs/", views.StaffListCreateAPIView.as_view(), name="staffs"),
     path("customers/", views.CustomerListCreateAPIView.as_view(), name="customers"),
     path('departments/', DepartmentListCreateView.as_view(), name='departments'),
-    path("crm/staffs/<int:pk>/", StaffUpdateAPIView.as_view(), name="staff-update"),
-
+    path("crm/staffs/<int:pk>/status/", StaffStatusUpdateAPIView.as_view(), name="staff-status-update"),
 ]
 
