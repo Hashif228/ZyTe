@@ -28,7 +28,7 @@ export default function Dashboard() {
         const countersRes = await api.get("crm/totals/");
         setCounters(countersRes.data);
 
-        const customersRes = await api.get("crm/customerss/");
+        const customersRes = await api.get("crm/customers/");
         setCustomers(customersRes.data);
       } catch (error) {
         console.error("Error fetching dashboard data:", error);
