@@ -27,7 +27,7 @@ export default function Register() {
 
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/api/users/register/",
+        "https://crlk.onrender.com/api/users/register/",
         formData
       );
       console.log(res);
