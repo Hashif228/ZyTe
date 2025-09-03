@@ -10,5 +10,6 @@ urlpatterns = [
     path("customers/", views.CustomerListCreateAPIView.as_view(), name="customers"),
     path('departments/', DepartmentListCreateView.as_view(), name='departments'),
     path("staffs/<int:pk>/", StaffStatusUpdateAPIView.as_view(), name="staff-status-update"),
+    path("managers/<int:pk>/", ManagerStatusUpdateAPIView.as_view(), name="staff-status-update"),
 ]
 

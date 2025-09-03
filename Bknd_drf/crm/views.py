@@ -1,6 +1,6 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import CustomerSerializer, ManagerSerializer, StaffSerializer, DepartmentSerializer,StaffStatusSerializer
+from .serializers import CustomerSerializer, ManagerSerializer, StaffSerializer, DepartmentSerializer,StaffStatusSerializer,ManagerStatusSerializer
 from rest_framework import generics, status
 from rest_framework.generics import ListCreateAPIView
 from rest_framework.parsers import MultiPartParser, FormParser
@@ -119,6 +119,10 @@ class ManagerListCreateAPIView(generics.ListCreateAPIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class ManagerStatusUpdateAPIView(generics.UpdateAPIView):
+    queryset = Staff.objects.all()
+    serializer_class = ManagerStatusSerializer
+    http_method_names = ['patch']
 
 
 class StaffStatusUpdateAPIView(generics.UpdateAPIView):

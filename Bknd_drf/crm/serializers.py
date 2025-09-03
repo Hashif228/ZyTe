@@ -17,6 +17,11 @@ class ManagerSerializer(serializers.ModelSerializer):
         model = Manager
         fields = ['id', 'name', 'phone', 'email', 'team', 'created_at', 'department', 'department_name']
 
+class ManagerStatusSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Manager
+        fields = ["status"]
+
 
 class StaffSerializer(serializers.ModelSerializer):
     manager_name = serializers.CharField(source="manager.name", read_only=True)
