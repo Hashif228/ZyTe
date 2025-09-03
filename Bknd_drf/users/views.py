@@ -1,6 +1,4 @@
-from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from django.utils.decorators import method_decorator
 from django.contrib.auth import authenticate
 from rest_framework import generics
 from .serializers import RegisterSerializer,LoginSerializer
@@ -17,13 +15,11 @@ from rest_framework import status
 User = get_user_model()
 
 
-@method_decorator(csrf_exempt, name='dispatch')
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
     permission_classes = [AllowAny]
 
-@csrf_exempt
 class LoginView(APIView):
     permission_classes = [AllowAny] 
 
@@ -45,7 +41,6 @@ class LoginView(APIView):
             })
         return Response({"error": "Invalid credentials"}, status=status.HTTP_400_BAD_REQUEST)
 
-@csrf_exempt
 def verify_token(request):
     auth = JWTAuthentication()
     header = auth.get_header(request)
