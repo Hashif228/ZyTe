@@ -38,7 +38,6 @@ export default function Login() {
 
       if (response.data.access) {
         localStorage.setItem("access_token", response.data.access);
-        localStorage.setItem("refresh_token", response.data.refresh);
         localStorage.setItem("username", response.data.username);
 
         setMessage({ text: "Login successful! ", type: "success" });
