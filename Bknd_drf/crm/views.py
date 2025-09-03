@@ -42,7 +42,7 @@ class DepartmentListCreateView(ListCreateAPIView):
 
 class CustomerListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = CustomerSerializer
-    parser_classes = [MultiPartParser, FormParser]  # for image upload
+    parser_classes = [MultiPartParser, FormParser] 
     def get_queryset(self):
         queryset = Customer.objects.all()
         search = self.request.query_params.get('search')

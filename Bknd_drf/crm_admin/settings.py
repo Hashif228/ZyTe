@@ -24,7 +24,12 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',default=True,cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "https://crlk.onrender.com/", 
+    
+]
 
 
 # Application definition
@@ -129,9 +134,19 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://crmadmin-blush.vercel.app"
+
 ]
+
+
+
+
 
 AUTH_USER_MODEL = "users.AdminUser"
 from datetime import timedelta
