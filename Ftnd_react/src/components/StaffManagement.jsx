@@ -8,8 +8,9 @@ import api from "./api";
 export default function StaffManagement() {
   const toggleStatus = async (id, newStatus) => {
   try {
-    await api.patch(`crm/staffs/${id}/`, { is_active: newStatus });
-    setStaffs(staffs.map(s => s.id === id ? { ...s, is_active: newStatus } : s));
+    await api.patch(`crm/staffs/${id}/`, { status: newStatus });
+setStaffs(staffs.map(s => s.id === id ? { ...s, status: newStatus } : s));
+
   } catch (err) {
     console.error("Error updating status:", err);
   }
@@ -31,6 +32,7 @@ export default function StaffManagement() {
           search: searchText,
           start_date: startDate,
           end_date: endDate,
+          
         },
       });
       setStaffs(res.data);
@@ -54,10 +56,11 @@ export default function StaffManagement() {
 { key: "status", label: "Status", render: (s, toggleStatus) => (
   <label className={styles.switch}>
     <input
-      type="checkbox"
-      checked={s.is_active}
-      onChange={() => toggleStatus(s.id, !s.is_active)}
-    />
+  type="checkbox"
+  checked={s.status}
+  onChange={() => toggleStatus(s.id, !s.status)}
+/>
+
     <span className={styles.slider}></span>
   </label>
 )},
