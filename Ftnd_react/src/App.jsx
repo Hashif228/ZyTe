@@ -5,10 +5,7 @@ import Customers from "./components/Customers";
 import StaffManagement from "./components/StaffManagement";
 import Managers from "./components/Managers";
 import Department from "./components/Department";
-import AddStaff from "./components/AddStaff";
-import AddCustomer from "./components/AddCustomer";
-import AddManager from "./components/AddManager";
-import AddDepartment from "./components/AddDepartment";
+
 import Register from "./components/Register";
 import ProtectedRoute from "./components/ProtectedRoute";
 
