@@ -19,7 +19,7 @@ export default function Header({title}){
                                 <div className={styles.pageTitle}>{title}</div>
                         </div>
                         <div className={styles.searchContainer}>
-                        <div className='styles.logout'>logout</div>
+                        <div className={styles.logout}>logout</div>
                             <div className={styles.searchInput}>
                                 <div className={styles.searchInputChild} ></div>
                                 <div className={styles.component1}>
