@@ -49,13 +49,7 @@
   	gap: 24px;
   	font-size: 15px;
 }
-.magnifyingglassIcon {
-  	width: 24px;
-  	position: relative;
-  	max-height: 100%;
-  	overflow: hidden;
-  	flex-shrink: 0;
-}
+
 .searchInput {
   	display: flex;
   	flex-direction: row;
@@ -140,3 +134,11 @@
   	object-fit: cover;
 }
 
+.logout{
+	color: brown;
+	font-weight: 300;
+	cursor: pointer;
+}
+.logout:hover{
+	font-weight: 800;
+}
