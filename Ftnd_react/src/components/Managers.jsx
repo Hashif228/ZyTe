@@ -134,10 +134,10 @@ export default function Managers() {
                                             key={manager.id || index}
                                             className={index % 2 === 0 ? styles.receptionistTableText : styles.text4}
                                         >
-                                            {col === "Managername" && <div className={styles.support}>{manager.name}00{manager.id}</div>}
+                                            {col === "Managername" && <div className={styles.support}>{manager.name}-0{manager.id}</div>}
                                             {col === "Name" && <div className={styles.support}>{manager.name}</div>}
                                             {col === "Phone" && <div className={styles.table_header}>{manager.phone}</div>}
-                                            {col === "Department" && <div className={styles.support}>{manager.department}</div>}
+                                            {col === "Department" && <div className={styles.support}>{manager.department_name}</div>}
                                             {col === "Team" && <div className={styles.support}>{manager.team}</div>}
                                             {col === "Joined On" && (
                                                 <div className={styles.calendarblankParent}>
